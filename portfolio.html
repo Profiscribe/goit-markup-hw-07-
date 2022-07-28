@@ -13,40 +13,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body class="page">
-    <header class="page-header">
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="header">
-          <div>
-            <nav class="main-nav">
-              <a class="logo" href="./index.html"
-                ><span class="accert">Web</span>Studio</a
-              >
-              <ul class="site-nav list">
-                <div class="liner">
-                  <li class="item">
-                    <a href="./index.html" class="link"
-                      >Студія
-                      <div class="line"></div>
-                    </a>
-                  </li>
-                </div>
-                <div>
-                  <li class="item">
-                    <a href="./portfolio.html" class="link current"
-                      >Портфоліо</a
-                    >
-                  </li>
-                </div>
-                <div>
-                  <li class="item"><a href="/" class="link">Контакти</a></li>
-                </div>
-              </ul>
-            </nav>
-          </div>
+        <div class="header__wrapper">
+          <nav class="header__nav nav">
+            <a class="logo" href="./index.html"
+              ><span class="accert">Web</span>Studio</a
+            >
+            <ul class="nav__list list">
+              <li class="nav__item item">
+                <a href="./index.html" class="link current"
+                  >Студія
+                  <div class="line"></div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфоліо</a>
+              </li>
+              <li class="item"><a href="/" class="link">Контакти</a></li>
+            </ul>
+          </nav>
 
           <div class="authorization">
             <ul class="auth-nav list">
@@ -344,7 +335,7 @@
           <p class="action">приєднуйтеся</p>
 
           <ul class="icons list">
-            <li clas="icons-item">
+            <li class="icons-item">
               <a href="/" class="circle">
                 <svg class="picture" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
@@ -378,7 +369,7 @@
           <p class="action">Підпишіться на розсилку</p>
           <form class="signup" name="signup-form" autocomplete="on" novalidate>
             <input type="email" name="email" id="email" placeholder="Email" />
-            <button class="signup-button" type="signup">
+            <button class="signup-button" type="submit">
               Підписатися<svg class="signup-icon" width="24" height="24">
                 <use href="./images/icon-test.svg#icon-plane"></use>
               </svg>
