@@ -111,7 +111,7 @@ footer {
     transition-property: var(#44454e);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .&:hover,
+    &:hover,
         &:focus {
             background-color: var(--accent-color);
             fill: var(--white-color);
